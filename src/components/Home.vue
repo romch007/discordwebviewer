@@ -14,7 +14,7 @@
                 @clickchannel="channelClicked"
                 :guild="selectedGuild"
                 :guild-selected="isGuildSelected"
-                :v-if="isGuildSelected"
+                v-if="isGuildSelected"
         ></Channels>
       </v-flex>
     </v-layout>
@@ -22,7 +22,7 @@
       <Messages
               :channel-selected="isChannelSelected"
               :channel="selectedChannel"
-              :v-if="isChannelSelected"
+              v-if="isChannelSelected"
       ></Messages>
     </v-flex>
   </v-container>
